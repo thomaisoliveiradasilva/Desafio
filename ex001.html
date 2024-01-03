@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangue de Heroi</title>
+    
+</head>
+<body>
+    <script> 
+    
+    var nome = window.prompt("escreva o nome do seu heroi!")
+    var xp = Number(window.prompt("Quanto XP seu herói tem hoje após longas batalhas?"))
+    var status = document.write(`O nome do seu herói é  <strong>${nome}</strong> ele tem um XP de ${xp}</br></br>`)
+    
+   
+    if (xp <= 1000 ){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>FERRO</strong></h2>`)
+    } else if(xp >= 1001 && xp <= 2000  ){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>BRONZE</strong></h2>`)
+    } else if(xp >= 2001 && xp <= 5000 ){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>PRATA</strong></h2>`)
+    } else if(xp >= 5001 && xp <= 7000){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>OURO</strong></h2>`)
+    }else if(xp >= 7001 && xp <= 8000){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>PLATINA</strong></h2>`)
+    }else if (xp >= 8001 && xp <=9000){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>ASCENDENTE</strong></h2>`)
+    }else if(xp >= 9000 && xp <= 10000){
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>IMORTAL</strong></h2>`)
+    }else{
+        document.writeln(`Essa quantidade de XP da ao seu heroi um ranking de <h2><strong>Radiante</strong></h2>`)
+    }
+    document.writeln(`XP for menor do que 1.000 = Ferro </br> XP for entre 1.001 e 2.000 = Bronze </br> XP for entre 2.001 e 5.000 = Prata </br> XP for entre 5.001 e 7.000 = Ouro </br> XP for entre 7.001 e 8.000 = Platina </br> XP for entre 8.001 e 9.000 = Ascendente </br> XP for entre 9.001 e 10.000= Imortal </br> XP for maior ou igual a 10.001 = Radiante </br>`)
+    </script>
+</body>
+</html>
